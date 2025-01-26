@@ -7,7 +7,10 @@ import DepartmentDashboard from '../Components/department/DepartmentDashboard'; 
 import Header from '../Components/shared/Header'; // Shared Header
 import Footer from '../Components/shared/Footer'; // Shared Footer
 import RegistrationPage from '../Components/receptionist/RegistrationPage';
-import DepartmentStaffInteraction from '../Components/department/departmentstaffinteraction,';';';
+import DepartmentStaffInteraction from '../Components/department/departmentstaffinteraction,';import SignupForm from '../pages/signup';
+import LoginForm from '../pages/login';
+';';
+
 const App = () => {
   return (
     <Router>
@@ -16,6 +19,8 @@ const App = () => {
         <Layout.Content style={{ padding: '20px' }}>
           <Routes>
             <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/login" element={<LoginForm />} />
+            <Route path="/signup" element={<SignupForm />} />
             <Route path="/receptionist" element={<ReceptionistDashboard />} />
             <Route path="/register" element={<RegistrationPage />} />
             <Route path="/department" element={<DepartmentDashboard />} />
